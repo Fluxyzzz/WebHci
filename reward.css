@@ -1,0 +1,324 @@
+/* ── NAV ACTIVE ── */
+.nav-active {
+  color: var(--gold) !important;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 2px;
+}
+
+/* ══════════════════════════════
+   REWARDS HERO
+══════════════════════════════ */
+.rewards-hero {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  min-height: 660px;
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Ilustrasi kiri ── */
+.rewards-hero-illus {
+  position: relative;
+  overflow: hidden;
+}
+
+.rewards-illus-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: sepia(60%) contrast(0.85) brightness(1.05);
+}
+
+.rewards-illus-tint {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(253,246,236,0) 60%,
+    rgba(253,246,236,0.95) 100%
+  );
+}
+
+.rewards-illus-logo {
+  position: absolute;
+  bottom: 36px;
+  left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,253,248,0.88);
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 4px 16px rgba(44,26,14,0.12);
+}
+
+.illus-logo-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--brown-dark);
+}
+.illus-logo-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.72rem;
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 1.5px;
+}
+
+/* ── Kanan ── */
+.rewards-hero-right {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 48px 40px 32px;
+  gap: 32px;
+}
+
+/* Judul + badge + foto */
+.rewards-hero-top {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.rewards-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--brown-dark);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.rewards-hero-italic {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-style: italic;
+  color: var(--red-accent);
+  line-height: 1.1;
+}
+
+/* Badge */
+.rewards-hero-badge {
+  text-align: center;
+  padding-top: 8px;
+}
+.rewards-badge-icon {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+.rewards-badge-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.88rem;
+  color: var(--brown-dark);
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+.rewards-badge-dots {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+.rewards-badge-dots span {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--gold-light);
+}
+.rewards-badge-dots span:nth-child(5) { background: var(--gold); }
+
+/* Foto pasta */
+
+.hero-badge {
+    position: absolute;
+    top: 20%;          /* Mengatur tinggi melayangnya badge */
+    left: 40px;
+    z-index: 10;       /* Angka besar memastikan dia berada di LAPISAN PALING ATAS (di atas piring) */
+}
+
+.hero-badge { 
+  display: flex;
+  flex-direction: column; /* Membuat isi badge berjejer ke bawah */
+  align-items: center;    /* Meratakan semua elemen ke tengah secara horizontal */
+  justify-content: center;/* Meratakan semua elemen ke tengah secara vertikal */
+  text-align: center;     /* Memastikan teks multi-baris (jika ada) tetap rata tengah */
+}
+.hero-badge-icon { font-size: 1.6rem; margin-bottom: 4px; }
+.hero-badge-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--brown-dark);
+  letter-spacing: 0.5px;
+}
+.hero-badge-dots {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  margin-top: 6px;
+}
+.hero-badge-dots span {
+  width: 5px; height: 5px;
+  border-radius: 100%;
+  background: var(--gold-light);
+}
+
+
+
+/* 1. Pastikan pembungkus area kanan mengunci posisi */
+.rewards-hero-img {
+    width: 75%;
+    height: 100%;             /* Mengikuti tinggi section hero */
+    position: relative;       /* Kunci utama agar posisi absolute di bawahnya akurat */
+    display: block;           /* Matikan flexbox-nya sementara biar gak narik gambar ke bawah */
+}
+
+.rewards-hero-img {
+    position: absolute;
+    
+    /* === UBAH BAGIAN INI === */
+    top: -25px; 
+    transform: none;
+    position: relative;       /* Kunci utama agar posisi absolute di bawahnya akurat */
+    display: block;           /* Matikan flexbox-nya sementara biar gak narik gambar ke bawah */
+    right: 50px;         
+    width: 500px;
+    height: auto !important;
+    overflow: visible;
+    z-index: 10;
+
+}
+
+
+.rewards-hero-img {
+  width: 500px;
+  height: 500px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(255, 255, 255, 0.15);
+  flex-shrink: 5;
+}
+.rewards-hero-img img {
+  width: 75%;                                  height: 75%;
+  object-fit: cover;
+}
+
+/* ══════════════════════════════
+   TABEL MEMBER
+══════════════════════════════ */
+.rewards-table-wrap {
+  border: 1px solid rgba(155,58,42,0.3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.rewards-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header */
+.rewards-table thead tr {
+  background: transparent;
+}
+.rewards-table thead th {
+  padding: 18px 28px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.82rem;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: var(--brown-mid);
+  text-align: center;
+  border-bottom: 1px solid rgba(155,58,42,0.25);
+  background: rgba(253,246,236,0.6);
+}
+.rewards-table thead th:first-child {
+  border-right: 1px solid rgba(155,58,42,0.25);
+  width: 35%;
+}
+
+/* Body rows */
+.rewards-table tbody tr {
+  border-bottom: 1px solid rgba(155,58,42,0.2);
+  transition: background 0.2s;
+}
+.rewards-table tbody tr:last-child { border-bottom: none; }
+.rewards-table tbody tr:hover { background: rgba(253,246,236,0.5); }
+
+/* Tier cell */
+.tier-cell {
+  border-right: 1px solid rgba(155,58,42,0.2);
+  text-align: center;
+  vertical-align: middle;
+  padding: 32px 20px;
+}
+
+.tier-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 400;
+  display: block;
+}
+.tier-name.bronze { color: #8B4513; }
+.tier-name.silver { color: #5a6472; }
+.tier-name.gold   { color: var(--gold); }
+
+/* Benefit cell */
+.benefit-cell {
+  padding: 24px 28px;
+  vertical-align: top;
+}
+
+.benefit-cell ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0;
+}
+
+.benefit-cell li {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--brown-mid);
+  line-height: 1.8;
+  padding: 1px 0;
+}
+
+/* ══════════════════════════════
+   RESPONSIVE
+══════════════════════════════ */
+@media (max-width: 1024px) {
+  .rewards-hero { grid-template-columns: 300px 1fr; }
+  .rewards-hero-img { width: 160px; height: 120px; }
+  .rewards-hero-title { font-size: 2rem; }
+  .rewards-hero-italic { font-size: 1.8rem; }
+}
+
+@media (max-width: 768px) {
+  .rewards-hero { grid-template-columns: 1fr; }
+  .rewards-hero-illus { height: 260px; }
+  .rewards-illus-tint {
+    background: linear-gradient(
+      to bottom,
+      rgba(253,246,236,0) 60%,
+      rgba(253,246,236,0.95) 100%
+    );
+  }
+  .rewards-hero-right { padding: 28px 24px; }
+  .rewards-hero-top { grid-template-columns: 1fr; }
+  .rewards-hero-img { width: 100%; height: 180px; }
+  .rewards-hero-badge { text-align: left; }
+}
+
+@media (max-width: 480px) {
+  .rewards-hero-title { font-size: 1.7rem; }
+  .rewards-hero-italic { font-size: 1.5rem; }
+  .tier-name { font-size: 1.4rem; }
+  .benefit-cell { padding: 16px; }
+  .rewards-hero-right { padding: 20px 16px; }
+}

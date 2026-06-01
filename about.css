@@ -1,0 +1,283 @@
+/* ── NAV ACTIVE ── */
+.nav-active {
+  color: var(--gold) !important;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 2px;
+}
+
+/* ══════════════════════════════
+   HERO — cinematic full width
+══════════════════════════════ */
+.about-hero {
+  position: relative;
+  height: 480px;
+  overflow: hidden;
+}
+
+.about-hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(44,26,14,0.72) 0%,
+    rgba(44,26,14,0.3) 50%,
+    rgba(184,148,63,0.15) 100%
+  );
+}
+
+.about-hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+.about-hero-eyebrow {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 14px;
+}
+
+.about-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.05;
+  margin-bottom: 4px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.about-hero-italic {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.4rem;
+  font-style: italic;
+  color: var(--gold-pale);
+  line-height: 1.1;
+  margin-bottom: 24px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.about-hero-line {
+  width: 60px;
+  height: 1px;
+  background: var(--gold-light);
+  margin-bottom: 18px;
+}
+
+.about-hero-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.5px;
+}
+
+/* ══════════════════════════════
+   STORY SECTION
+══════════════════════════════ */
+.about-story-section {
+  background: var(--cream);
+  padding: 72px 80px;
+}
+
+/* ── Story Block ── */
+.about-block {
+  display: grid;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.about-block-left  { grid-template-columns: 1fr 1fr; }
+.about-block-right { grid-template-columns: 1fr 1fr; }
+
+/* Swap order for right variant */
+.about-block-right .about-block-img  { order: 1; }
+.about-block-right .about-block-text { order: 2; }
+
+/* Text side */
+.about-block-text {
+  padding: 16px 0;
+}
+
+.about-block-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--border-soft);
+  line-height: 1;
+  margin-bottom: 4px;
+  /* large ghost number */
+  -webkit-text-stroke: 1px rgba(184,148,63,0.3);
+  color: transparent;
+}
+
+.about-block-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.78rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+.about-block-text p {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.94rem;
+  line-height: 1.9;
+  color: var(--text-body);
+}
+
+/* Image side */
+.about-block-img {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(44,26,14,0.16);
+}
+
+.about-block-img img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.about-block-img:hover img { transform: scale(1.04); }
+
+.about-block-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(184,148,63,0.25);
+  border-radius: 6px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-block-img-label {
+  position: absolute;
+  bottom: 14px;
+  left: 16px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.78rem;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.85);
+  background: rgba(44,26,14,0.45);
+  padding: 4px 10px;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+/* ── Ornament divider ── */
+.about-ornament {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 48px 0;
+}
+.about-ornament-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-light), transparent);
+}
+
+/* ══════════════════════════════
+   VALUES STRIP
+══════════════════════════════ */
+.about-values {
+  background: var(--brown-dark);
+  padding: 52px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.about-value {
+  flex: 1;
+  text-align: center;
+  padding: 0 32px;
+}
+
+.about-value-icon {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.about-value-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.about-value-desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.6;
+}
+
+.about-value-divider {
+  width: 1px;
+  height: 70px;
+  background: rgba(255,255,255,0.12);
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════
+   REVEAL ANIMATION (set by JS)
+══════════════════════════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ══════════════════════════════
+   RESPONSIVE
+══════════════════════════════ */
+@media (max-width: 960px) {
+  .about-hero { height: 360px; }
+  .about-hero-content { padding: 0 40px; }
+  .about-hero-title { font-size: 2.8rem; }
+  .about-hero-italic { font-size: 2.4rem; }
+  .about-story-section { padding: 52px 40px; }
+  .about-block-left,
+  .about-block-right { grid-template-columns: 1fr; gap: 28px; }
+  .about-block-right .about-block-img  { order: 1; }
+  .about-block-right .about-block-text { order: 2; }
+  .about-values { flex-direction: column; gap: 32px; padding: 40px; }
+  .about-value-divider { width: 60px; height: 1px; }
+}
+
+@media (max-width: 600px) {
+  .about-hero { height: 280px; }
+  .about-hero-content { padding: 0 24px; }
+  .about-hero-title { font-size: 2rem; }
+  .about-hero-italic { font-size: 1.7rem; }
+  .about-story-section { padding: 36px 20px; }
+  .about-block-img img { height: 220px; }
+}

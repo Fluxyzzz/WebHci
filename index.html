@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mamma Mia Ristorante</title>
+  <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="index.html" class="logo">
+    <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+      <circle cx="20" cy="20" r="19" stroke="#b8943f" stroke-width="1.5"/>
+      <path d="M12 28 C14 18, 20 14, 20 10 C20 14, 26 18, 28 28" stroke="#b8943f" stroke-width="1.2" fill="none"/>
+      <path d="M15 24 Q20 20 25 24" stroke="#9b3a2a" stroke-width="1" fill="none"/>
+      <circle cx="20" cy="10" r="2" fill="#b8943f" opacity="0.6"/>
+    </svg>
+    <div class="logo-text">
+      <div class="brand">Mamma Mia</div>
+      <div class="sub">Ristorante</div>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Menu.html">Menu</a></li>
+    <li><a href="reward.html">Rewards</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="order.html">Order Page</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <svg class="hero-floral tl" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0 Q40 0 80 40 Q120 80 160 80 Q120 80 80 120 Q40 160 0 160 Q0 120 40 80 Q0 40 0 0Z" fill="#b8943f"/>
+    <circle cx="30" cy="30" r="10" fill="#b8943f" opacity="0.4"/>
+    <circle cx="60" cy="70" r="6" fill="#9b3a2a" opacity="0.3"/>
+  </svg>
+  <svg class="hero-floral br" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0 Q40 0 80 40 Q120 80 160 80 Q120 80 80 120 Q40 160 0 160 Q0 120 40 80 Q0 40 0 0Z" fill="#b8943f"/>
+    <circle cx="30" cy="30" r="10" fill="#b8943f" opacity="0.4"/>
+    <circle cx="60" cy="70" r="6" fill="#9b3a2a" opacity="0.3"/>
+  </svg>
+
+  <div class="hero-left">
+    <div class="hero-eyebrow">Amore italiano.</div>
+    <h1 class="hero-title">Sapore autentico</h1>
+    <p class="hero-title-italic">Amore italiano.</p>
+    <div class="hero-divider"></div>
+    <p class="hero-desc">Mamma Mia menghadirkan resep tradisional Italia yang dimasak dengan jujur. Tanpa proses yang rumit, hanya bahan-bahan segar berkualitas tinggi untuk menemani waktu santai Anda.</p>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-badge">
+      <div class="hero-badge-icon"></div>
+      <div class="hero-badge-dots">
+      </div>
+    </div>
+
+
+  <section>
+    <div class="hero-img-wrap">
+      <img src="pict/7f7a3b87-bbdd-4f08-b9a5-ff1b726a9fb8.png" alt="Pasta Italiana" />
+      <div class="hero-img-overlay"></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION DIVIDER ── -->
+<div class="section-divider">
+  <span>Amore Italiano.</span>
+  <span>Chef Recommendation</span>
+</div>
+
+<!-- ── CARDS ── -->
+<section class="cards-section">
+
+  <!-- Featured Menu -->
+  <div class="featured">
+    <div class="featured-inner">
+      <img class="featured-img"
+        src="pict/download (5).jfif"
+        alt="Linguine Ai Gamberi" />
+      <div class="featured-info">
+        <h2>Linguine Ai Gamberi</h2>
+        <p>Pasta linguine lembut dengan udang segar, aroma bawang putih, sentuhan lemon, dan taburan parsley.
+             Rasanya ringan, gurih, dan sempurna untuk pecinta seafood Italia.</p>
+        <div class="featured-footer">
+          <span class="price">Rp. 150.000,00</span>
+          <button class="btn-order" onclick="handleOrder('Linguine Ai Gamberi')">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chef Recommendations -->
+<section class="cards-section"></section>
+  <div class="chef-recs">
+    <div class="chef-recs-label">Chef Recommendation</div>
+    <div class="chef-grid">
+      <div class="chef-card" onclick="handleOrder('Ossobuco Alla Milan')">
+        <img src="pict/Ossobuco alla Milanese.jfif" alt="Ossobuco Alla Milan" />
+        <div class="chef-card-overlay">
+          <div class="chef-card-name">Ossobuco Alla Milan</div>
+          <div class="chef-card-desc">Daging betis sapi muda dimasak perlahan, sering disajikan dengan risotto alla Milanese.</div>
+        </div>
+      </div>
+      <div class="chef-card" onclick="handleOrder('Ribollita')">
+        <img src="pict/Ribollita toscana, ricetta originale.jfif" alt="Ribollita" />
+        <div class="chef-card-overlay">
+          <div class="chef-card-name">Ribollita</div>
+          <div class="chef-card-desc">Sup roti dan sayuran khas Toscana dengan cannellini dan kale.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ── TAGLINE BAND ── -->
+<div class="tagline-band">
+  <p>Membawa cita rasa asli Italia ke meja Anda dalam atmosfer yang rileks dan nyaman.</p>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+
+    <div class="footer-logo">
+      <div class="brand">Mamma Mia</div>
+      <div class="sub">Ristorante</div>
+      <div class="addr">Gg. Grove Street No. 99, Kavling<br>Ucok Bersaudara, Los Santos,<br>San Andreas</div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Hubungi Kami</div>
+      <div class="footer-contact-row">
+        <span class="icon"></span>
+        <span>+62 8123 4567 8901</span>
+      </div>
+      <div class="footer-contact-row">
+        <span class="icon"></span>
+        <span>mammaristorante@mia.com</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Jam Operasional</div>
+      <div class="footer-hours-row"><span class="day">Mon – Fri</span><span>11.00 – 22.00</span></div>
+      <div class="footer-hours-row"><span class="day">Sat – Sun</span><span>10.00 – 23.00</span></div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Follow Us</div>
+      <div class="footer-social">
+        <a href="#" title="Instagram">📸</a>
+        <a href="#" title="X / Twitter">✖</a>
+        <a href="#" title="TikTok">🎵</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">© 2026 Mamma Mia Ristorante. All Rights Reserved</div>
+</footer>
+
+<!-- ── TOAST NOTIFICATION ── -->
+<div id="toast"></div>
+
+<!-- ── SCRIPT ── -->
+<script src="home.js"></script>
+</body>
+</html>

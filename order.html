@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order - Mamma Mia Ristorante</title>
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="index.html" class="logo">
+    <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+      <circle cx="20" cy="20" r="19" stroke="#b8943f" stroke-width="1.5"/>
+      <path d="M12 28 C14 18, 20 14, 20 10 C20 14, 26 18, 28 28" stroke="#b8943f" stroke-width="1.2" fill="none"/>
+      <path d="M15 24 Q20 20 25 24" stroke="#9b3a2a" stroke-width="1" fill="none"/>
+      <circle cx="20" cy="10" r="2" fill="#b8943f" opacity="0.6"/>
+    </svg>
+    <div class="logo-text">
+      <div class="brand">Mamma Mia</div>
+      <div class="sub">Ristorante</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="reward.html">Rewards</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="order.html" class="nav-cta nav-active-cta">Order Page</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="order-hero">
+  <!-- Kiri: ilustrasi kota sepia -->
+  <div class="order-hero-illus">
+    <img src="pict/italy.jfif" alt="Italia Street"/>
+    <div class="order-hero-illus-fade"></div>
+  </div>
+  <!-- Tengah: judul -->
+  <div class="order-hero-center">
+    <h1 class="order-hero-title">Sapore autentico</h1>
+    <p class="order-hero-italic">Amore italiano.</p>
+  </div>
+  <!-- Kanan: foto pasta -->
+  <div class="order-hero-right">
+    <img src="pict/7f7a3b87-bbdd-4f08-b9a5-ff1b726a9fb8.png"alt="Italian Pasta"/>
+  </div>
+</section>
+
+<!-- ── ORDER LAYOUT ── -->
+<section class="order-section">
+  <div class="order-layout">
+
+    <!-- ── FORM ── -->
+    <div class="order-form-card">
+
+      <!-- Row 1: Full Name + Phone -->
+      <div class="form-row-2">
+        <div class="form-group">
+          <label class="form-label">1. Full Name</label>
+          <input type="text" class="form-input" id="fullName" placeholder=""/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">2. Phone Number</label>
+          <input type="tel" class="form-input" id="phone" placeholder=""/>
+        </div>
+      </div>
+
+      <!-- Row 2: Service Option + Choose Menu -->
+      <div class="form-row-2">
+        <div class="form-group">
+          <label class="form-label">3. Service Option</label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="service" value="dine-in" checked/>
+              <span class="radio-circle"></span>
+              <div class="radio-text">
+                <span class="radio-title">Dine in</span>
+                <span class="radio-sub">Pick – up your order at our restaurant</span>
+              </div>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="service" value="takeaway"/>
+              <span class="radio-circle"></span>
+              <div class="radio-text">
+                <span class="radio-title">Take away</span>
+                <span class="radio-sub">We'll deliver your order</span>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">4. Choose Menu</label>
+          <div class="select-wrap">
+            <select class="form-select" id="menuSelect">
+              <option value="">Select menu...</option>
+              <option value="Linguine Ai Gamberi|175000">Linguine Ai Gamberi Rp 175.000</option>
+              <option value="Ossobuco Alla Milan|150000">Ossobuco Alla Milan Rp 150.000</option>
+              <option value="Ribollita|150000">Ribollita Rp 150.000</option>
+              <option value="Pesto alla Genovese|150000">Pesto alla Genovese Rp 150.000</option>
+              <option value="Bruschetta al Pomodoro|75000">Bruschetta al Pomodoro Rp 75.000</option>
+              <option value="Spaghetti alle Vongole|125000">Spaghetti alle Vongole Rp 125.000</option>
+              <option value="Saltimbocca alla Romana|150000">Saltimbocca alla Romana Rp 150.000</option>
+              <option value="Pollo alla Parmigiana|125000">Pollo alla Parmigiana Rp 125.000</option>
+              <option value="Bistecca alla Fiorentina|125000">Bistecca alla Fiorentina Rp 125.000</option>
+              <option value="Parmigiana di Melanzane|150000">Parmigiana di Melanzane Rp 150.000</option>
+              <option value="Branzino al Limone|100000">Branzino al Limone Rp 100.000</option>
+              <option value="Costolette d'Agnello|125000">Costolette d'Agnello Rp 125.000</option>
+              <option value="Brasato al Barolo|150000">Brasato al Barolo Rp 150.000</option>
+              <option value="Cotoletta alla Milanese|125000">Cotoletta alla Milanese Rp 125.000</option>
+              <option value="Involtini di Vitello|120000">Involtini di Vitello Rp 120.000</option>
+            </select>
+            <span class="select-arrow">▾</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3: Extra Topping -->
+      <div class="form-group">
+        <label class="form-label">5. Extra Topping <em>(optional)</em></label>
+        <div class="checkbox-group">
+          <label class="checkbox-option">
+            <input type="checkbox" value="Extra Cheese"/>
+            <span class="checkbox-box"></span>
+            Extra Cheese
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" value="Extra Mushroom"/>
+            <span class="checkbox-box"></span>
+            Extra Mushroom
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" value="Bacon"/>
+            <span class="checkbox-box"></span>
+            Bacon
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" value="Olive"/>
+            <span class="checkbox-box"></span>
+            Olive
+          </label>
+        </div>
+      </div>
+
+      <!-- Row 4: Eating Utensils + Payment Method -->
+      <div class="form-row-2">
+        <div class="form-group">
+          <label class="form-label">6. Eating Utensils</label>
+          <div class="checkbox-group">
+            <label class="checkbox-option">
+              <input type="checkbox" id="utensilYes" value="yes"/>
+              <span class="checkbox-box"></span>
+              Yes
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" id="utensilNo" value="no"/>
+              <span class="checkbox-box"></span>
+              No
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">7. Payment Method</label>
+          <div class="select-wrap">
+            <select class="form-select" id="paymentMethod">
+              <option value="">Select payment...</option>
+              <option value="Cash">Cash</option>
+              <option value="Transfer Bank">Transfer Bank</option>
+              <option value="QRIS">QRIS</option>
+              <option value="Kartu Kredit/Debit">Kartu Kredit / Debit</option>
+              <option value="GoPay">GoPay</option>
+              <option value="OVO">OVO</option>
+              <option value="Dana">Dana</option>
+            </select>
+            <span class="select-arrow">▾</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 5: Additional Notes -->
+      <div class="form-group">
+        <label class="form-label">8. Additional Notes <em>(optional)</em></label>
+        <textarea class="form-textarea" id="notes" rows="4" placeholder=""></textarea>
+      </div>
+
+      <!-- Place Order button -->
+      <button class="btn-place-order" id="btnPlaceOrder">Place Order</button>
+
+    </div>
+
+    <!-- ── CART ── -->
+    <div class="order-cart-card" id="cartCard">
+
+      <!-- Empty state -->
+      <div class="cart-empty" id="cartEmpty">
+        <svg class="cart-cloche" viewBox="0 0 160 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Steam -->
+          <path d="M62 28 Q58 18 62 10 Q66 2 62 0" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M80 24 Q76 14 80 6 Q84 0 80 -2" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M98 28 Q94 18 98 10 Q102 2 98 0" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <!-- Cloche dome -->
+          <path d="M20 80 Q20 36 80 36 Q140 36 140 80 Z" fill="#1a1a1a"/>
+          <!-- Cloche handle knob -->
+          <ellipse cx="80" cy="36" rx="10" ry="6" fill="#1a1a1a"/>
+          <!-- Cloche rim -->
+          <rect x="12" y="80" width="136" height="10" rx="5" fill="#1a1a1a"/>
+          <!-- Plate -->
+          <ellipse cx="80" cy="108" rx="70" ry="12" fill="#1a1a1a"/>
+          <ellipse cx="80" cy="108" rx="62" ry="9" fill="#f5ede0"/>
+        </svg>
+        <p class="cart-empty-text">Your Order Is Empty</p>
+      </div>
+
+      <!-- Filled state (hidden by default) -->
+      <div class="cart-filled" id="cartFilled" style="display:none;">
+        <div class="cart-title">Ringkasan Pesanan</div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-divider"></div>
+        <div class="cart-summary">
+          <div class="cart-summary-row">
+            <span>Subtotal</span>
+            <span id="cartSubtotal">Rp 0</span>
+          </div>
+          <div class="cart-summary-row">
+            <span>Ongkos Kirim</span>
+            <span id="cartShipping">Rp 0</span>
+          </div>
+          <div class="cart-summary-row cart-total">
+            <span>Total</span>
+            <span id="cartTotal">Rp 0</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo">
+      <div class="brand">Mamma Mia</div>
+      <div class="sub">Ristorante</div>
+      <div class="addr">Gg. Grove Street No. 99, Kavling<br>Ucok Bersaudara, Los Santos,<br>San Andreas</div>
+    </div>
+    <div>
+      <div class="footer-col-title">Hubungi Kami</div>
+      <div class="footer-contact-row"><span class="icon"></span><span>+62 8123 4567 8901</span></div>
+      <div class="footer-contact-row"><span class="icon"></span><span>mammaristorente@mia.com</span></div>
+    </div>
+    <div>
+      <div class="footer-col-title">Jam Operasional</div>
+      <div class="footer-hours-row"><span class="day">Mon – Fri</span><span>11.00 – 22.00</span></div>
+      <div class="footer-hours-row"><span class="day">Sat – Sun</span><span>10.00 – 23.00</span></div>
+    </div>
+    <div>
+      <div class="footer-col-title">Follow Us</div>
+      <div class="footer-social">
+        <a href="#" title="Instagram">📸</a>
+        <a href="#" title="X">✖</a>
+        <a href="#" title="TikTok">🎵</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Mamma Mia Ristorante. All Rights Reserved</div>
+</footer>
+
+<div id="toast"></div>
+<script src="script.js"></script>
+<script src="order.js"></script>
+</body>
+</html>

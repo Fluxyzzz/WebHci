@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Mamma Mia Ristorante</title>
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="index.html" class="logo">
+    <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+      <circle cx="20" cy="20" r="19" stroke="#b8943f" stroke-width="1.5"/>
+      <path d="M12 28 C14 18, 20 14, 20 10 C20 14, 26 18, 28 28" stroke="#b8943f" stroke-width="1.2" fill="none"/>
+      <path d="M15 24 Q20 20 25 24" stroke="#9b3a2a" stroke-width="1" fill="none"/>
+      <circle cx="20" cy="10" r="2" fill="#b8943f" opacity="0.6"/>
+    </svg>
+    <div class="logo-text">
+      <div class="brand">Mamma Mia</div>
+      <div class="sub">Ristorante</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Menu.html" class="nav-active">Menu</a></li>
+    <li><a href="reward.html">Rewards</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="order.html" class="nav-cta">Order Page</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="menu-hero">
+  <svg class="hero-floral tl" viewBox="0 0 160 160" fill="none">
+    <path d="M0 0 Q40 0 80 40 Q120 80 160 80 Q120 80 80 120 Q40 160 0 160 Q0 120 40 80 Q0 40 0 0Z" fill="#b8943f"/>
+    <circle cx="30" cy="30" r="10" fill="#b8943f" opacity="0.4"/>
+    <circle cx="60" cy="70" r="6" fill="#9b3a2a" opacity="0.3"/>
+  </svg>
+  <svg class="hero-floral br" viewBox="0 0 160 160" fill="none">
+    <path d="M0 0 Q40 0 80 40 Q120 80 160 80 Q120 80 80 120 Q40 160 0 160 Q0 120 40 80 Q0 40 0 0Z" fill="#b8943f"/>
+    <circle cx="30" cy="30" r="10" fill="#b8943f" opacity="0.4"/>
+    <circle cx="60" cy="70" r="6" fill="#9b3a2a" opacity="0.3"/>
+  </svg>
+
+  <div class="menu-hero-left">
+    <h1 class="menu-hero-title">Sapori d'Italia</h1>
+    <p class="menu-hero-sub">Tradizione. Passione. Gusto autentico.</p>
+  </div>
+  <div class="menu-hero-right">
+    <div class="menu-hero-badge">
+      <div class="menu-hero-badge-dots">
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="pict/7f7a3b87-bbdd-4f08-b9a5-ff1b726a9fb8.png" alt="Pasta Italiana" />
+      <div class="hero-img-overlay"></div>
+  </div>
+</section>
+
+<!-- ── FEATURED ── -->
+<section class="menu-featured">
+  <div class="menu-featured-inner">
+    <div class="menu-featured-img-wrap">
+      <img src="pict/download (5).jfif" alt="Linguine Ai Gamberi"/>
+    </div>
+    <div class="menu-featured-content">
+      <h2 class="menu-featured-name">Linguine Ai Gamberi</h2>
+      <p class="menu-featured-desc">Pasta linguine lembut dengan udang segar, aroma bawang putih, sentuhan lemon, dan taburan parsley. Rasanya ringan, gurih, dan segar sempurna untuk pecinta seafood Italia.</p>
+      <div class="menu-featured-footer">
+        <span class="menu-featured-price">Rp. 175.000,00</span>
+        <button class="btn-order" onclick="handleOrder('Linguine Ai Gamberi')">Order Now</button>
+      </div>
+    </div>
+    <!-- decorative floral -->
+    <svg class="featured-floral" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 0 Q150 50 100 100 Q50 50 100 0Z" fill="#d4a955" opacity="0.15"/>
+      <path d="M100 100 Q160 150 100 200 Q40 150 100 100Z" fill="#b8943f" opacity="0.1"/>
+      <path d="M100 200 Q155 250 100 300 Q45 250 100 200Z" fill="#9b3a2a" opacity="0.08"/>
+      <circle cx="100" cy="100" r="8" fill="#d4a955" opacity="0.2"/>
+      <circle cx="100" cy="200" r="6" fill="#b8943f" opacity="0.15"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ── MENU GRID ── -->
+<section class="menu-section">
+  <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo">
+      <div class="brand">Mamma Mia</div>
+      <div class="sub">Ristorante</div>
+      <div class="addr">Gg. Grove Street No. 99, Kavling<br>Ucok Bersaudara, Los Santos,<br>San Andreas</div>
+    </div>
+    <div>
+      <div class="footer-col-title">Hubungi Kami</div>
+      <div class="footer-contact-row"><span class="icon"></span><span>+62 8123 4567 8901</span></div>
+      <div class="footer-contact-row"><span class="icon"></span><span>mammaristorante@mia.com</span></div>
+    </div>
+    <div>
+      <div class="footer-col-title">Jam Operasional</div>
+      <div class="footer-hours-row"><span class="day">Mon – Fri</span><span>11.00 – 22.00</span></div>
+      <div class="footer-hours-row"><span class="day">Sat – Sun</span><span>10.00 – 23.00</span></div>
+    </div>
+    <div>
+      <div class="footer-col-title">Follow Us</div>
+      <div class="footer-social">
+        <a href="#" title="Instagram">📸</a>
+        <a href="#" title="X / Twitter">✖</a>
+        <a href="#" title="TikTok">🎵</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Mamma Mia Ristorante. All Rights Reserved</div>
+</footer>
+
+<div id="toast"></div>
+<script src="script.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>
